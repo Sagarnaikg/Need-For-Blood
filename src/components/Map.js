@@ -59,6 +59,18 @@ let Map = ({ latitude, longitude }) => {
           </h3>
         </Paper>
       </div>
+
+      <Paper
+        elevation={3}
+        style={{position: "absolute",
+        bottom: 350,
+        left: 20,
+        width: 100,
+        padding:20,
+        zIndex:50}}>
+      <h5 style={{color:"blue"}}>Current Location:</h5> <br/><h5>{longitude.toFixed(2)} {latitude.toFixed(2)}</h5>
+    </Paper>
+
     </Grid>
   );
 };

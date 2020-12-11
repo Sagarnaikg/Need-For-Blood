@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import Map from "./components/Map";
 
+import { CircularProgress } from '@material-ui/core';
+
+
 function App() {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
@@ -23,7 +26,17 @@ function App() {
     );
   } else {
     // todo:implemant loading here
-    return <div>Loading</div>;
+    return (
+            <CircularProgress
+              style={{
+                color:"dark blue",
+                position: "fixed",
+                top: "50%",
+                left: "50%",
+                marginTop: "-50px",
+                marginLeft: "-100px"
+                }}
+            />);
   }
 }
 
