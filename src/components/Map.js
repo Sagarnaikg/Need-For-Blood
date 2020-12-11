@@ -39,8 +39,6 @@ export default function Map() {
   const [markers, setMarkers] = React.useState([]);
     const handleClick = ({ lngLat: [longitude, latitude] }) => {
     setMarkers((markers) => [{ longitude, latitude }]);
-    const long=longitude;
-    const lat=latitude;
   };
 
   return (
@@ -83,11 +81,11 @@ export default function Map() {
                   style={{position: "absolute",
                   bottom: 350,
                   left: 20,
-                  width: 125,
-                  padding:25,
+                  width: 100,
+                  padding:20,
                   zIndex:50}}
                   key={i+1}>
-                <h4>Current Location:</h4> <br/>{m.longitude.toFixed(2)} {m.latitude.toFixed(2)}
+                <h5 style={{color:"blue"}}>Selected Location:</h5> <br/><h5>{m.longitude.toFixed(2)} {m.latitude.toFixed(2)}</h5>
               </Paper>
               </>
             ))
