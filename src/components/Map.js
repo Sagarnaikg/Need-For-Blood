@@ -1,4 +1,7 @@
+// react
 import React, { useState } from "react";
+
+// react app componenets
 import InteractiveMap, {
   Marker,
   GeolocateControl,
@@ -6,11 +9,16 @@ import InteractiveMap, {
   FullscreenControl,
   ScaleControl,
 } from "react-map-gl";
+
 import { Grid } from "@material-ui/core";
 
 import * as parkDate from "../data/users.json";
+
+// user location pointer
 import Pin from "./Pin";
+// donners pointer
 import DonorPin from "./DonorPin";
+// request button
 import MainButton from "./MainButton";
 
 export default function Map() {
@@ -22,27 +30,6 @@ export default function Map() {
     zoom: 10,
   });
 
-  const geolocateStyle = {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    margin: 10,
-  };
-
-  const fullscreenControlStyle = {
-    position: "absolute",
-    top: 36,
-    left: 0,
-    padding: "10px",
-  };
-
-  const navStyle = {
-    position: "absolute",
-    top: 72,
-    left: 0,
-    padding: "10px",
-  };
-
   const scaleControlStyle = {
     position: "absolute",
     bottom: 36,
@@ -51,9 +38,9 @@ export default function Map() {
   };
 
   const [markers, setMarkers] = React.useState([]);
-  const handleClick = ({ lngLat: [longitude, latitude] }) => {
+  /*   const handleClick = ({ lngLat: [longitude, latitude] }) => {
     setMarkers((markers) => [{ longitude, latitude }]);
-  };
+  }; */
 
   return (
     <Grid container>
@@ -62,11 +49,11 @@ export default function Map() {
         mapboxApiAccessToken={
           "pk.eyJ1IjoidGVhbS1kZWNvZGVycyIsImEiOiJja2lrMno5MHEwNXduMnRveW1xbHZmbm9qIn0.vJTY7weN0PdZe8qh9fgcRA"
         }
-         mapStyle="mapbox://styles/team-decoders/ckik3z2q00l4j17ujgfec17vn"
+        mapStyle="mapbox://styles/team-decoders/ckik3z2q00l4j17ujgfec17vn"
         onViewportChange={(viewport) => {
           setViewport(viewport);
         }}
-        onClick={handleClick}
+        /*  onClick={handleClick} */
         style={{ zIndex: 50 }}
       >
         {markers.length
@@ -100,20 +87,6 @@ export default function Map() {
             <DonorPin />
           </Marker>
         ))}
-
-        <GeolocateControl
-          style={geolocateStyle}
-          positionOptions={{ enableHighAccuracy: true }}
-          trackUserLocation={true}
-        />
-
-        <div style={fullscreenControlStyle}>
-          <FullscreenControl />
-        </div>
-
-        <div style={navStyle}>
-          <NavigationControl />
-        </div>
 
         <div style={scaleControlStyle}>
           <ScaleControl />
