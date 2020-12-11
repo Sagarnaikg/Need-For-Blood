@@ -9,7 +9,6 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
 
-import HelpButton from './HelpButton';
 import MainForm from './MainForm';
 
 
@@ -88,10 +87,7 @@ export default function MainButton() {
       justify="center"
       alignItems="center"
     >
-    <Grid item xs={4} sm={2} lg={1}>
-      <HelpButton/>
-    </Grid>
-      <Grid item xs={8} sm={4} lg={2}>
+      <Grid item lg={2} md={3} sm={5} xs={7}>
         <Fab
           variant="extended"
           color="primary"
