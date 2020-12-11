@@ -9,7 +9,7 @@ You can be a benificiary just by heading on to the browser check for "Need for b
 Allow access to your location. \
 Send request by filling out the basic required details. \
 Close your eyes. Take a deep breathe. Pray for good. \
-You will get connected with the Our Voluntary Donars within next few minutes. They will save a precious life. \ 
+You will get connected with the Our Voluntary Donars within next few minutes. They will save a precious life.\
 Thank them well, and do join our community and be one among the life saviours. \
 May the best be with you!
 
