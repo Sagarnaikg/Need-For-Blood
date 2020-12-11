@@ -1,0 +1,27 @@
+.usersCard {
+  background-color: var(--primary-white);
+  z-index: 60;
+  position: absolute;
+  width: 230px;
+  height: 60px;
+  left: 43%;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 7px;
+  padding: 5px 0px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.usersCard h4 {
+  color: var(--main-text-color);
+  font-size: 0.7rem;
+}
+
+.usersCard h3 {
+  margin-top: 3px;
+  font-size: 1.7rem;
+  color: var(--primary-blue);
+}

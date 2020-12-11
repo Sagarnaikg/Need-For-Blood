@@ -9,3 +9,15 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+/* colors */
+:root {
+  --main-text-color: #3c3a53;
+  --sub-text-color: #85848b;
+  --primary-blue: #1152fd;
+  --primary-red: #f84971;
+  --primary-green: #9eebbd;
+  --primary-white: #ffffff;
+  --primary-blue-light: rgba(17, 82, 253, 0.3);
+  --primary-red-light: rgba(248, 73, 113, 0.3);
+}

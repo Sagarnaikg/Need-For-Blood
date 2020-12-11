@@ -9,7 +9,9 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
 
-import MainForm from "./MainForm";
+import MainForm from "../main_form/MainForm";
+
+import "./main_button.css";
 
 const drawerWidth = 360;
 
@@ -59,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 export default function MainButton() {
   const style = {
     top: "auto",
-    bottom: 40,
+    bottom: 20,
     position: "fixed",
     padding: 30,
     zIndex: 1000,
@@ -85,6 +87,7 @@ export default function MainButton() {
             variant="extended"
             color="primary"
             style={style}
+            id="RequestBtn"
             onClick={handleDrawerOpen}
             className={clsx(open && classes.hide)}
           >

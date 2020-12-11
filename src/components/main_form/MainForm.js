@@ -6,7 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 
-import User from "./User";
+import User from "../User";
+import "./main_form.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,11 +67,16 @@ export default function MainForm() {
           className={classes.root}
           noValidate
           autoComplete="off"
+          id="form"
           onSubmit={handleFormSubmit}
         >
           <Typography
             gutterBottom
-            style={{ marginTop: 15, marginLeft: 20 }}
+            style={{
+              marginTop: 15,
+              marginLeft: 20,
+              color: "var(--main-text-color)",
+            }}
             variant="h6"
           >
             Please Enter Your Details
@@ -155,7 +161,11 @@ export default function MainForm() {
               marks
               min={1}
               max={11}
-              style={{ width: 300, marginLeft: 20 }}
+              style={{
+                width: 300,
+                marginLeft: 20,
+                color: "var(--primary-blue)",
+              }}
             />
           </div>
 
@@ -165,6 +175,7 @@ export default function MainForm() {
               size="large"
               color="primary"
               className={classes.margin}
+              id="formBtn"
               style={{ margin: 20 }}
               type="submit"
             >

@@ -5,12 +5,13 @@ import React, { useState } from "react";
 import InteractiveMap, { Marker } from "react-map-gl";
 
 import { Grid } from "@material-ui/core";
-import { Paper } from "@material-ui/core";
 
 // donners pointer
 import DonorPin from "./DonorPin";
 // request button
-import MainButton from "./MainButton";
+import MainButton from "./main_button/MainButton";
+// active users card
+import ActiveUsersCard from "./active_users_card/active_users_card";
 
 let Map = ({ latitude, longitude }) => {
   const [viewport, setViewport] = useState({
@@ -42,23 +43,7 @@ let Map = ({ latitude, longitude }) => {
       {/* /map */}
       {/* request button */}
       <MainButton />
-      <div style={{ position: "absolute", left: "50%", top: 20 }}>
-        <Paper
-          elevation={3}
-          style={{
-            position: "relative",
-            left: "-50%",
-            width: 150,
-            padding: 20,
-            zIndex: 50,
-          }}
-        >
-          <h4 style={{ textAlign: "center" }}>Active Users</h4>
-          <h3 style={{ color: "blue", textAlign: "center", padding: 5 }}>
-            12500
-          </h3>
-        </Paper>
-      </div>
+      <ActiveUsersCard />
     </Grid>
   );
 };
