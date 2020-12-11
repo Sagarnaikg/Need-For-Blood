@@ -4,13 +4,11 @@ import React, { useState } from "react";
 // react app componenets
 import InteractiveMap, {
   Marker,
-  GeolocateControl,
-  NavigationControl,
-  FullscreenControl,
   ScaleControl,
 } from "react-map-gl";
 
 import { Grid } from "@material-ui/core";
+import { Paper } from '@material-ui/core';
 
 import * as parkDate from "../data/users.json";
 
@@ -37,10 +35,13 @@ export default function Map() {
     padding: "10px",
   };
 
+
   const [markers, setMarkers] = React.useState([]);
-  /*   const handleClick = ({ lngLat: [longitude, latitude] }) => {
+    const handleClick = ({ lngLat: [longitude, latitude] }) => {
     setMarkers((markers) => [{ longitude, latitude }]);
-  }; */
+    const long=longitude;
+    const lat=latitude;
+  };
 
   return (
     <Grid container>
@@ -53,11 +54,12 @@ export default function Map() {
         onViewportChange={(viewport) => {
           setViewport(viewport);
         }}
-        /*  onClick={handleClick} */
+         onClick={handleClick}
         style={{ zIndex: 50 }}
       >
         {markers.length
           ? markers.map((m, i) => (
+            <>
               <Marker {...m} key={i}>
                 <div
                   style={{
@@ -72,9 +74,22 @@ export default function Map() {
                   {console.log(
                     `Clicked here: \n ${m.longitude}, ${m.latitude}`
                   )}
+
                   <Pin />
                 </div>
               </Marker>
+              <Paper
+                  elevation={3}
+                  style={{position: "absolute",
+                  bottom: 350,
+                  left: 20,
+                  width: 125,
+                  padding:25,
+                  zIndex:50}}
+                  key={i+1}>
+                <h4>Current Location:</h4> <br/>{m.longitude.toFixed(2)} {m.latitude.toFixed(2)}
+              </Paper>
+              </>
             ))
           : null}
 
@@ -92,8 +107,21 @@ export default function Map() {
           <ScaleControl />
         </div>
       </InteractiveMap>
-
       <MainButton />
+      <div style={{position: 'absolute', left: '50%', top: 20}}>
+      <Paper
+          elevation={3}
+          style={{
+          position: 'relative',
+          left: '-50%',
+          width: 150,
+          padding:20,
+          zIndex:50}}
+>
+        <h4 style={{textAlign:"center"}}>Active Users</h4>
+        <h3 style={{color:'blue', textAlign:"center", padding:5}}>12500</h3>
+      </Paper>
+      </div>
     </Grid>
   );
 }
