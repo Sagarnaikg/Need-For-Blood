@@ -80,8 +80,7 @@ export default function MainButton() {
   return (
     <>
       <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={4} sm={2} lg={1}></Grid>
-        <Grid item xs={8} sm={4} lg={2}>
+        <Grid item lg={2} md={3} sm={5} xs={7}>
           <Fab
             variant="extended"
             color="primary"
