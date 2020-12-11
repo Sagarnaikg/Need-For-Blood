@@ -31,8 +31,8 @@ function App() {
           position: "fixed",
           top: "50%",
           left: "50%",
-          marginTop: "-50px",
-          marginLeft: "-50px",
+          marginTop: "-25px",
+          marginLeft: "-25px"
         }}
       />
     );
