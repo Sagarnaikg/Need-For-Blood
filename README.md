@@ -1,6 +1,17 @@
 # Need for Blood
-System which connects blood donors to the needy
+## "Bring a life back to power. Make blood donation your responsibility."
+Availability of blood for medical emergencies is a major issue in our society. These days we get denied to blood until we get donors. Medical emergencies have become heavily dependent on replacement blood donations which are not only unsafe but also a way of exploiting patients and their families.
+##
+Our project is an innovative approach to address global health. We provide immediate access to blood donors all over India, 24 hours a day, 7 days a week! We provide a network of donors who respond to emergency situations in an efficient manner. The ultimate goal of this project is to provide an easy-to-use, easy-to-access, efficient and reliable way to get life-saving blood, free of cost. Our project works to connect blood donors and recipients through a system which can be accessed on any device. We provide blood donors who are ready to help save lives any time and at any place to people who are desperately in need of it.
 
+## How do I use it?
+You can be a benificiary just by heading on to the browser check for "Need for blood".\
+Allow access to your location. \
+Send request by filling out the basic required details. \
+Close your eyes. Take a deep breathe. Pray for good. \
+You will get connected with the Our Voluntary Donars within next few minutes. They will save a precious life. \ 
+Thank them well, and do join our community and be one among the life saviours. \
+May the best be with you!
 
 
 
