@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 // react app componenets
 import InteractiveMap, { Marker } from "react-map-gl";
+import { Paper } from "@material-ui/core";
 
 import { Grid } from "@material-ui/core";
 

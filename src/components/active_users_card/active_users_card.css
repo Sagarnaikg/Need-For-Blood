@@ -25,3 +25,11 @@
   font-size: 1.7rem;
   color: var(--primary-blue);
 }
+
+@media only screen and (max-width: 620px) {
+  .usersCard {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+}
