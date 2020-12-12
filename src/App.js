@@ -13,6 +13,7 @@ function App() {
       navigator.geolocation.getCurrentPosition((position) => {
         setLatitude(position.coords.latitude);
         setLongitude(position.coords.longitude);
+        console.log(position.coords);
       });
     }
   }, []);

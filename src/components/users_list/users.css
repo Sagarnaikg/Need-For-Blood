@@ -1,0 +1,33 @@
+.user-header {
+  padding: 10px 0px;
+  color: var(--main-text-color);
+  font-size: 1rem;
+}
+
+.user-card {
+  margin: 7px 0px;
+  padding: 0px 16px;
+}
+
+.user-img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.user-text-header {
+  padding-left: 5px;
+  color: var(--main-text-color) !important;
+}
+
+.user-text-msg {
+  padding-left: 5px;
+  color: var(--sub-text-color) !important;
+  font-size: 0.9rem;
+}

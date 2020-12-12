@@ -1,0 +1,12 @@
+.location-card {
+  background-color: var(--primary-white);
+  z-index: 60;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  border-radius: 7px;
+  padding: 5px 0px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.18);
+}

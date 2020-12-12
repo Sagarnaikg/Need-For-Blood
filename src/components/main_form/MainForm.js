@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 
-import User from "../User";
+import User from "../users_list/user.js";
 import "./main_form.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,8 +75,8 @@ export default function MainForm() {
             style={{
               marginTop: 15,
               marginLeft: 20,
-              color: "var(--main-text-color)",
             }}
+            id="form-header"
             variant="h6"
           >
             Please Enter Your Details
@@ -150,6 +150,7 @@ export default function MainForm() {
               id="discrete-slider"
               gutterBottom
               style={{ marginLeft: 20 }}
+              id="form-header-1"
             >
               Select Range (in km)
             </Typography>
