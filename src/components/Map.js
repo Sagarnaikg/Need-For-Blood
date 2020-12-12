@@ -13,8 +13,7 @@ import DonorPin from "./DonorPin";
 import MainButton from "./main_button/MainButton";
 // active users card
 import ActiveUsersCard from "./active_users_card/active_users_card";
-// login button
-import LoginModal from './login/LoginModal';
+
 
 let Map = ({ latitude, longitude }) => {
   const [viewport, setViewport] = useState({
@@ -64,7 +63,6 @@ let Map = ({ latitude, longitude }) => {
         </h5>
       </Paper>
 
-      <LoginModal/>
     </Grid>
   );
 };
