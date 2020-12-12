@@ -56,6 +56,10 @@ export default function MainForm() {
 
   const [submit, setSubmit] = React.useState(false);
   const handleFormSubmit = () => {
+    setName("");
+    setPhone("");
+    setBloodtype("");
+    setBloodtype("O");
     setSubmit(true);
   };
 
@@ -186,6 +190,20 @@ export default function MainForm() {
         </ValidatorForm>
       )}
       {submit && <User />}
+      {submit && (
+        <Button
+          variant="contained"
+          size="large"
+          color="primary"
+          className={classes.margin}
+          id="formBtn"
+          style={{ margin: 20 }}
+          type="submit"
+          onClick={() => setSubmit(false)}
+        >
+          Finish
+        </Button>
+      )}
     </>
   );
 }

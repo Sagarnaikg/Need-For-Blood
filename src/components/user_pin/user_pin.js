@@ -8,7 +8,9 @@ import userSvg from "../../data/assets/user_marker.svg";
 const UserPin = ({ zoomLevel }) => {
   /* min 7 max 13 */
 
-  let size = Math.ceil(zoomLevel * 33.3333333333 - 233.3333333333);
+  /* let size = Math.ceil(zoomLevel * 33.3333333333 - 233.3333333333); */
+
+  let size = 133.33 * zoomLevel - 1533.33;
 
   size = size < 0 ? 0 : size;
 

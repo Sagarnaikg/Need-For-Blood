@@ -1,6 +1,4 @@
 .inner {
-  width: 10px;
-  height: 10px;
   border-radius: 50%;
   background-color: var(--primary-blue);
 }
@@ -12,8 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
   border-radius: 50%;
   background-color: var(--primary-blue-light);
 }

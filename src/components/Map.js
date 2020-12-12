@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 // react app componenets
 import InteractiveMap, { Marker } from "react-map-gl";
-import { Paper } from "@material-ui/core";
 
 import { Grid } from "@material-ui/core";
 
@@ -50,7 +49,6 @@ let createDonors = (latMin, latMax, logMin, lonMax) => {
     let long = getRndInteger(logMin, lonMax);
 
     if (lat >= 12.967 && lat <= 12.984 && long >= 77.59 && long <= 77.6075) {
-      console.log("yes");
     } else {
       positions.push({
         lat: lat,
@@ -65,23 +63,18 @@ let createDonors = (latMin, latMax, logMin, lonMax) => {
 let Map = ({ latitude, longitude }) => {
   const [zoomLevel, setZoonLevel] = useState(13);
   const [viewport, setViewport] = useState({
-    latitude: latitude,
-    longitude: longitude,
+    latitude: 12.98,
+    longitude: 77.6,
     width: "100vw",
     height: "100vh",
     zoom: 13,
   });
 
-  const [positions, setPositiones] = useState(
-    createDonors(10.5, 14.5, 75.5, 79.5)
-  );
-  const [nearByUsers, setNearUser] = useState(
-    createDonors(12.95, 13, 77.54, 77.66)
-  );
+  const positions = createDonors(10.5, 14.5, 75.5, 79.5);
 
-  const [donorsRange, setDonorsRange] = useState(
-    createDonorsRange(12.967, 12.984, 77.59, 77.6075)
-  );
+  const nearByUsers = createDonors(12.95, 13, 77.54, 77.66);
+
+  const donorsRange = createDonorsRange(12.967, 12.984, 77.59, 77.6075);
 
   return (
     <Grid container>
@@ -109,7 +102,7 @@ let Map = ({ latitude, longitude }) => {
               latitude={position["lat"]}
               longitude={position["log"]}
             >
-              <DonorPin />
+              <DonorPin zoomLevel={zoomLevel} />
             </Marker>
           );
         })}
@@ -120,7 +113,7 @@ let Map = ({ latitude, longitude }) => {
               latitude={position["lat"]}
               longitude={position["log"]}
             >
-              <DonorPin />
+              <DonorPin zoomLevel={zoomLevel} />
             </Marker>
           );
         })}
