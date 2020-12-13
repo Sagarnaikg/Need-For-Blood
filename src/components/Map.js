@@ -60,7 +60,7 @@ let createDonors = (latMin, latMax, logMin, lonMax) => {
   return positions;
 };
 
-let Map = ({ latitude, longitude }) => {
+let Map = (/* { latitude, longitude } */) => {
   const [zoomLevel, setZoonLevel] = useState(13);
   const [viewport, setViewport] = useState({
     latitude: 12.98,
@@ -70,11 +70,17 @@ let Map = ({ latitude, longitude }) => {
     zoom: 13,
   });
 
-  const positions = createDonors(10.5, 14.5, 75.5, 79.5);
+  const [positions, setPositions] = useState(
+    createDonors(10.5, 14.5, 75.5, 79.5)
+  );
 
-  const nearByUsers = createDonors(12.95, 13, 77.54, 77.66);
+  const [nearByUsers, setNear] = useState(
+    createDonors(12.95, 13, 77.54, 77.66)
+  );
 
-  const donorsRange = createDonorsRange(12.967, 12.984, 77.59, 77.6075);
+  const [donorsRange, setRange] = useState(
+    createDonorsRange(12.967, 12.983, 77.59, 77.607)
+  );
 
   return (
     <Grid container>
@@ -91,7 +97,7 @@ let Map = ({ latitude, longitude }) => {
         style={{ zIndex: 50 }}
       >
         {/* location points */}
-        <Marker key={"001"} latitude={latitude} longitude={longitude}>
+        <Marker key={"001"} latitude={12.98} longitude={77.6}>
           <UserPin zoomLevel={zoomLevel} />
         </Marker>
 
@@ -118,7 +124,27 @@ let Map = ({ latitude, longitude }) => {
           );
         })}
 
-        {donorsRange.map((position) => {
+        <Marker key={"001"} latitude={12.975} longitude={77.6}>
+          <DonorPinRange />
+        </Marker>
+
+        <Marker key={"001"} latitude={12.978} longitude={77.595}>
+          <DonorPinRange />
+        </Marker>
+
+        <Marker key={"001"} latitude={12.979} longitude={77.597}>
+          <DonorPinRange />
+        </Marker>
+
+        <Marker key={"001"} latitude={12.984} longitude={77.603}>
+          <DonorPinRange />
+        </Marker>
+
+        <Marker key={"001"} latitude={12.979} longitude={77.608}>
+          <DonorPinRange />
+        </Marker>
+
+        {/* {donorsRange.map((position) => {
           return (
             <Marker
               key={position["lat"]}
@@ -128,13 +154,13 @@ let Map = ({ latitude, longitude }) => {
               <DonorPinRange />
             </Marker>
           );
-        })}
+        })} */}
       </InteractiveMap>
       {/* /map */}
       {/* request button */}
       <MainButton />
       <ActiveUsersCard />
-      <LocationCard latitude={latitude} longitude={longitude} />
+      <LocationCard latitude={12.98} longitude={77.6} />
     </Grid>
   );
 };

@@ -10,7 +10,7 @@
     {
       "type": "Feature",
       "properties": {
-        "PARK_ID": 960,
+        "PARK_ID": 910,
         "FACILITYID": 28014,
         "NAME": "Douglas Lawson",
         "NAME_FR": "Pending ...",
@@ -55,7 +55,7 @@
     {
       "type": "Feature",
       "properties": {
-        "PARK_ID": 960,
+        "PARK_ID": 950,
         "FACILITYID": 28014,
         "NAME": "Jim Wheeler",
         "NAME_FR": "Pending ...",

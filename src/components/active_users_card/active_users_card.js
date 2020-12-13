@@ -6,7 +6,7 @@ const ActiveUsersCard = () => {
   return (
     <div className="usersCard">
       <h4>Active Users</h4>
-      <h3>12,34,56,789</h3>
+      <h3>1,56,789</h3>
     </div>
   );
 };

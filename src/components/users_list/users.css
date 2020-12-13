@@ -66,6 +66,31 @@
   font-size: 0.9rem;
 }
 
+.dialogTitle {
+  color: var(--primary-blue);
+}
+
+.dialogContent {
+  margin: 10px 30px;
+  padding: 20px;
+  height: 300px;
+}
+
+.dialogImg {
+  transform: scale(1.2);
+  margin-bottom: 20px;
+}
+
+#detailsBtn {
+  border-radius: 5px;
+  width: 30px;
+  padding: 0px 5px;
+  font-size: 0.7rem;
+  height: 27px;
+  color: var(--main-text-color);
+  border: 3px solid var(--primary-blue);
+}
+
 @keyframes borderMover {
   from {
     border: 4px solid var(--primary-white);
