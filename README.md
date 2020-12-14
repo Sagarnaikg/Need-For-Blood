@@ -26,12 +26,8 @@ May the force be with you!
   <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s6.png" width="100%" />
 </div>
 
-<object width="425" height="350">
-  <param name="movie" value="https://youtu.be/RANfePbCzf4" />
-  <param name="wmode" value="transparent" />
-  <embed src="https://youtu.be/RANfePbCzf4"
-         wmode="transparent" width="425" height="350" />
-</object>
+
+[![YouTube Link](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/RANfePbCzf4)
 
 
 
