@@ -1,4 +1,3 @@
-# Need for Blood
 
 <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/logo.png" width="100%" />
 
