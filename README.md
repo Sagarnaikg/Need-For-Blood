@@ -1,4 +1,7 @@
 # Need for Blood
+
+<img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/logo.png" width="100vw" />
+
 ## "Bring a life back to power. Make blood donation your responsibility."
 Availability of blood for medical emergencies is a major issue in our society. These days we get denied blood till we get donors. Medical emergencies have become heavily dependent on replacement blood donations which are not only unsafe but also a potential way of exploiting patients and their families.
 ##
