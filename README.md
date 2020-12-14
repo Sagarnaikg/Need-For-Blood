@@ -27,7 +27,7 @@ May the force be with you!
 </div>
 
 
-[![YouTube Link](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/RANfePbCzf4)
+[![YouTube Link](https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s1.png)](https://youtu.be/RANfePbCzf4)
 
 
 
