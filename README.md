@@ -15,6 +15,18 @@ You will get connected with Our Voluntary Donors within a few minutes. They will
 Thank them well, and do give back to our community by signing up to be a life saviour! \
 May the force be with you!
 
+<div  
+  style="display:flex;"
+  >
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s1.png" width="100%" />
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s2.png" width="100%" />
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s3.png" width="100%" />
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s4.png" width="100%" />
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s5.png" width="100%" />
+  <img src="https://github.com/Sagarnaikg/Need-For-Blood/blob/master/images/s6.png" width="100%" />
+</div>
+
+
 
 View the project here :- [live demo](https://need-for-blood-9cf11.web.app/)
 
